@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// wrap
+// 使用wrap error
 func GetSql() error {
 	return errors.Wrap(sql.ErrNoRows, "GetSql failed")
 }
